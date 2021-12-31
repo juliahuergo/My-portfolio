@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portfolio</title>
+		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+		<style>
+			ul{
+			list-style: none;
+			}
+			nav{
+			position: relative; 
+			flex-wrap: nowrap;
+			background-color: white;
+			}
+			.welcome-section{
+			width: 100%;
+			height: 100vh;
+			justify-content: center; 
+			background-color: black;
+			}
+			.projects-grid{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+			grid-gap: 3.5em;
+			width: 100%;
+			max-width: 1280px;
+			margin: 0 auto; 
+			margin-bottom: 6em; 
+			padding-top: 6em;
+			}
+			@media(max-width: 30.625em){
+			.projects-grid{
+			grid-template-columns: 1fr; 
+			}			
+			}
+			.card img{
+				max-height:  250px;
+			}
+			.card{
+				height: 450px; 
+				margin-bottom:  13px;
+				margin-top:  13px;
+			}
+			.welcome-section h2{
+				font-family:  Open Sans; 
+				font-style: italic;
+				color:  white;
+				margin-right: 15px;
+				margin-left: 15px;
+				align-items: center;
+			}
+			.welcome-section h1{
+				color:  white;
+			}
+			h2{
+				font-family:  Open Sans; 
+				font-style: italic;
+			}
+			.projects-section{
+				padding-bottom:  40px;
+			}
+			.contact h1{
+				align-items:  center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class = "container">
+			<div class="nav-scroller py-1 mb-2">
+				<nav class="navbar navbar-dark bg-dark d-flex justify-content-between fixed-top">
+					<a class="p-4 text-light font-weight-bold" href="#">About Me</a>
+					<a class="p-4 text-light font-weight-bold" href="#projects-section">Projects</a>
+					<a class="p-4 text-light font-weight-bold" href="#contact-section">Contact</a>
+				</nav>
+			</div>
+			<div class = "row" style="padding-top: 90px";>
+				<div class = "col-md-12">
+					<section id="welcome-section" class="welcome-section d-flex flex-column min-vh-100 justify-content-center align-items-center">
+						<h1>Hello, I am Julia Huergo</h1>
+						<h2>I'm from Asturias, Spain, I'm 15 and study 4ºESO (sophomore year / Year 11). I'm looking to learn more about web design and further coding as it is the fastest growing industry and something that is profoundly eye-opening.</h2>
+					</section>
+				</div>
+			</div>
+			<section id="projects-section" class="projects-section">
+			<div class = "row" id="projects-grid">
+				<div class = "col-sm-6">
+					<div class="card">
+						
+						<img class="card-img-top" src="https://github.com/juliahuergo/ChristmasGiftGuide/blob/main/2021-12-29%20(1).png?raw=true" alt="Card image cap">
+						<div class="card-body">
+							<h1 class="project-title">The Ultimate Christmas Gift Guide</h1>
+							<p class="card-text">A tribute page on all surrounding the ethics of gifts</p>
+							<a href="https://juliahuergo.github.io/ChristmasGiftGuide/" class="btn btn-primary">Visit</a>
+						</div>
+					</div> 
+				</div>
+
+					<div class = "col-sm-6">
+					<div class="card">
+						
+						<img class="card-img-top" src="https://github.com/juliahuergo/ChristmasSurvey/blob/main/2021-12-30%20(2).png?raw=true" alt="Card image cap">
+						<div class="card-body">
+							<h1 class="project-title">The Ultimate Christmas Survey</h1>
+							<p class="card-text">A survey on all regarding beliefs and religions</p>
+							<a href="https://juliahuergo.github.io/HotelPage/" class="btn btn-primary">Visit</a>
+						</div>
+					</div> 
+				</div>
+			</div>
+			<div class="row">
+				<div class = "col-sm-6">
+					<div class="card">
+						
+						<img class="card-img-top" src="https://github.com/juliahuergo/HotelPage/blob/main/2021-12-30%20(6).png?raw=true" alt="Card image cap">
+						<div class="card-body">
+							<h1 class="project-title">La Capricciosa</h1>
+							<p class="card-text">A product landing page on an invented hotel</p>
+							<a href="https://juliahuergo.github.io/ChristmasSurvey/" class="btn btn-primary">Visit</a>
+						</div>
+					</div> 
+				</div>
+				<div class = "col-sm-6">
+					<div class="card">
+						
+						<img class="card-img-top" src="https://github.com/juliahuergo/PhysicsMotionNotes/blob/main/Captura.png?raw=true" alt="Card image cap">
+						<div class="card-body">
+							<h1 class="project-title">La física del movimiento</h1>
+							<p class="card-text">A technical documentation page on the basic types of movement in Spanish</p>
+							<a href="https://juliahuergo.github.io/PhysicsMotionNotes/" class="btn btn-primary">Visit</a>
+						</div>
+					</div> 
+				</div>
+			</div>
+			</section>
+			<div class = "row">
+				<div class = "col-md-12">
+					<section id="contact" class="contact-section d-flex  flex-column min-vh-100 justify-content-center align-items-center">
+						<div class="contact-section-header">
+							<h1>To see my updates</h1>
+							<h2>be sure to check my socials</h2>
+						</div>
+						<div class="contact-links">
+							<a
+								id="profile-link"
+								href="https://github.com/juliahuergo"
+								target="_blank"
+								class="btn contact-details"
+							>
+							<i class="fab fa-github"></i>Github
+							</a>
+							
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
